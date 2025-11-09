@@ -1,0 +1,25 @@
+#	Angriffe	Kommentar	MAX
+4.1.1	Einfach	Verwendung von einem Alphabet. 	
+	Mono-Alphabet	Klein- und Grossschreibung: 0.25	0.75
+			
+		Zahlen: 0.25	
+			
+		Sonderzeichen: 0.25	
+4.1.2	Mittel	Verwendung eines zweiten Alphabets	
+	Poly-Alphabet	Türkisch, Ungarisch, Finnisch, …: 0.375	0.75
+			
+		Kyrilisch, Chinesisch, Römisch, …: 0.375	
+			
+	Dictionaries	Smart-Vorgehen durch Verwendung von Benutzer-Kredentials und deren Permutationen.	
+		Anstatt alle Versuche auszuprobieren, wird mit aus bestehenden Daten wie Email, Geburtstag, etc Permustationen des möglichen Passwortes ausprobiert.	
+4.1.3	Komplexe Angriffe	Optimierung von Ressourcen	
+	Parallelisierter Angriff	Die Attacke geschieht mit vorbereiteten Look-Up Dateien (Vorbereitete Hash-Plain-Tabelle)	1.00
+			
+	Rainbow-Tables	Es wird mit mehreren Instanzen angegriffen, wobei jede Instanz einen bestimmten Wertebereich übernimmt.	
+			
+4.1.4	Angriff ist ein einem separaten File untergebracht. File ist parametrisierbar 		
+	z.B.: startSQLAttack C | A | I		0.50
+			
+			
+	
+			

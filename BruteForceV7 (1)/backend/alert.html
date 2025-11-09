@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SECURITY ALERT</title>
+    <style>
+        body {
+            background-color: #ff0000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            animation: flash 0.5s infinite;
+        }
+        
+        @keyframes flash {
+            0% { background-color: #ff0000; }
+            50% { background-color: #cc0000; }
+            100% { background-color: #ff0000; }
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        
+        .close-btn {
+            background-color: white;
+            color: #ff0000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .close-btn:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠️ SECURITY ALERT ⚠️</h1>
+        <div class="message" id="alertMessage"></div>
+        <button class="close-btn" onclick="closeWindow()">CLOSE</button>
+    </div>
+
+    <script>
+        // Get the message from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message') || 'Multiple failed login attempts detected!';
+        
+        document.getElementById('alertMessage').textContent = message;
+        
+        // Flash the background
+        function closeWindow() {
+            window.close();
+        }
+        
+        // Auto-close after 10 seconds
+        setTimeout(closeWindow, 10000);
+    </script>
+</body>
+</html>

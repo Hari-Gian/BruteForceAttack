@@ -1,0 +1,26 @@
+{
+  "name": "bruteforce-backend",
+  "version": "1.0.0",
+  "description": "Backend for AllBruteForce V1.0.2",
+  "type": "module",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js",
+    "dev": "node --watch backend.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.4.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "hcaptcha": "^0.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "open": "^8.4.0",
+    "pino": "^10.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}
